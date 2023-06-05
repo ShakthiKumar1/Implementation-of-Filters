@@ -10,32 +10,19 @@ Anaconda - Python 3.7
 Import the modules need to perform image filtering
 
 ### Step2
-For performing smoothing operation of an image
+Performing smoothing operation of an image by
 
-Average filter
-kernel=np.ones((11,11),np.float32)/121
-image3=cv2.filter2D(image2,-1,kernel)
-
-Weighted average filter
-kernel1=np.array([[1,2,1],[2,4,2],[1,2,1]])/16
-image3=cv2.filter2D(image2,-1,kernel1
-
-Gaussian Blur
-gaussian_blur=cv2.GaussianBlur(image2,(33,33),0,0)
-
-Median filter
-median=cv2.medianBlur(image2,13)
+i)Average filter,
+ii)Weighted average filter
+iii)Gaussian Blur
+iv)Median filter
 
 ### Step3
 
-For performing sharpening on a image.
+Performing sharpening on a image by
 
-Laplacian Kernel
-kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
-image3=cv2.filter2D(image2,-1,kernel2)
-
-Laplacian Operator
-laplacian=cv2.Laplacian(image2,cv2.CV_64F)
+i)Laplacian Kernel
+ii)Laplacian Operator
 
 ### Step4
 
@@ -45,7 +32,7 @@ Display all the images based on the filter type
 
 End the program
 
-## Program:
+## Program: Implementation of filters.
 ### Developed By   :Shakthi kumar S
 ### Register Number:212222110043
 
